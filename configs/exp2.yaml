@@ -1,0 +1,21 @@
+Dataset:
+  dataset_name: Advogato
+  similarity_type: graph
+Submodular:
+  submodular_problem: Revenue maximization
+  competitor: Buchbinder et. al. 2014
+  K: 10
+  epsilon: 0.25
+  ratio: 0.05
+  per_class: True
+  obtain_global: False
+Experimentation:
+  save_path: Results
+  allvall: True
+  multiple_ks: True
+  multiple_ratios: False
+  graph_plotting: True
+  load_results: False
+  reps: 4
+Embedding:
+  model: dino_cls

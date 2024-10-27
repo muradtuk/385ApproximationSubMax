@@ -1,0 +1,24 @@
+Dataset:
+  dataset_name: Advogato
+  similarity_type: graph
+Submodular:
+  submodular_problem: Movie recommendation
+  competitor: Buchbinder et. al. 2014
+  K: 80
+  epsilon: 0.25
+  ratios: 0.01
+  per_class: True
+  us_lazy_init: 0
+Experimentation:
+  save_path: Results
+  allvall: True
+  multiple_ks: True
+  multiple_ratios: False
+  graph_plotting: True
+  load_results: True
+  reps: 2
+  update_results: False
+  as_function_of_lambda: False
+  graph_compare: False
+Embedding:
+  model: dino_cls
